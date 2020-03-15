@@ -1,0 +1,17 @@
+/* ADD CSS CODE AT 'PROJECT-URL/config/design/custom-css' */
+
+#collection-5e4183089b373537f633bc85 .cust-image-block {
+  height:0;
+  opacity: 0;
+  width: 100%;
+  position: relative;
+  padding: 0px;
+  left: -15vw;
+  top: 0;
+}
+#collection-5e4183089b373537f633bc85 .sqs-col-2 .html-block {
+    padding-bottom: 0;
+}
+/* #collection-5e4183089b373537f633bc85 .cust-text-block {
+    background-color: yellow;
+}   */
