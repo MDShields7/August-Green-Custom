@@ -10,7 +10,7 @@
 2.  Go to [Netlify Drag & Drop](https://app.netlify.com/drop). Drag the 'app-files' folder onto the site. FYI: the index.html file should be just inside the folder you drop.</br>
 4.  Netlify will automatically build and deploy your site, giving it a random name. I highly recommend changing the site name, so you can keep track of each site easier. Go to settings at the tops, then under Site Details, change site name button.</br>
 
-![Netlify Settings page](https://github.com/MDShields7/August-Green-Custom/blob/master/images/netlify-setting-page.png | width=800 "Setting page")<br>
+![Netlify Settings page](https://github.com/MDShields7/August-Green-Custom/blob/master/images/netlify-setting-page.png)<!-- .element width="80%" --><br>
 
 ### Create the Squarespace page
 1.  Find the page where you will place the walkthrough. Insert a code block ( under MORE, with </> symbol ).</br>
@@ -19,6 +19,6 @@
 6.  Go back to the code block, on line 6 of the code you will see const myURL = ''. Insert your walkthrough's URL here in between the quotes.</br>
 7.  Apply changes to the code block, and save the page.</br>
 
-![Squarespace Code Editing](https://github.com/MDShields7/August-Green-Custom/blob/master/images/ss-code-block.png  | width=800 "Settings page")<br>
+![Squarespace Code Editing](https://github.com/MDShields7/August-Green-Custom/blob/master/images/ss-code-block.png)<!-- .element width="80%" --><br>
 
 +  You can go back and find your [Netlify Dashboard](https://app.netlify.com/) at any time to view, edit or delete websites.</br>
