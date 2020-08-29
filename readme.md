@@ -1,10 +1,10 @@
 # August Green Custom Code
 
 ## Contents - Tutorials
-* [Add a 3d walkthrough to squarespace](#user-content-tutorial:-add-a-3d-walkthrough-to-squarespace)<br/>
+* [Add a 3d walkthrough to squarespace](#user-content-add-a-3d-walkthrough-to-squarespace)<br/>
 * [Add clickable dropdown menus](#user-content-add-clickable-dropdown-menus)<br/>
 
-### Tutorial: Add a 3d walkthrough to squarespace
+### Add a 3d walkthrough to squarespace
 
 #### Creating your Marzipano Walkthrough
 +  Create a walkthrough on [marzipano.net](https://www.marzipano.net/) ( not covered in this tutorial)</br>
@@ -27,7 +27,7 @@
 
 +  You can go back and find your [Netlify Dashboard](https://app.netlify.com/) at any time to view, edit or delete websites.</br>
 
-### Tutorial: Add clickable dropdown menus
+### Add clickable dropdown menus
 
 1.  Insert a markdown section on your squarespace page in the editor.</br>
 2.  Place the text you need, using #### before each section, and br tag after each individual line in that section. Follow the \[ Name \]\( link \) pattern for links too. Use my [dropdown markdown example](https://github.com/MDShields7/August-Green-Custom/blob/master/dropdown.md).</br>
