@@ -1,15 +1,21 @@
 <div id='walkthrough' style='margin:auto;text-align:center;'></div>
 <script>
-// Leave the div with id='walkthrough' above
-
 // Place url of your deployed app here
 // example myUrl = 'https://avatar-dimension-studio.netlify.app'
-const myUrl = 'https://avatar-dimension-studio.netlify.app';
-
+const myUrl = '';
 $(document).ready( function (){
     makeWalkthrough();
 })
 var myOrientation;
+$(window).resize( function (){
+    if ( window.innerHeight > window.innerWidth && myOrientation === 'horz'){
+        $("#walkthrough").empty();
+        makeWalkthrough();
+    } else if (window.innerHeight < window.innerWidth && myOrientation === 'vert') {
+        $("#walkthrough").empty();
+        makeWalkthrough();
+    }
+});
 function makeWalkthrough () {
     const myWidth = window.innerWidth;
     const myHeight = window.innerHeight;
@@ -28,25 +34,12 @@ function makeWalkthrough () {
         newHeight = 3/4 * newWidth;
         myOrientation = 'horz'
     }
-    console.log('newWidth',newWidth)
-    console.log('newHeight',newHeight)
-    console.log('myOrientation',myOrientation)
-
-    // Insert window for walkthrough
     var marzipanoWindow = document.createElement("iframe");
     marzipanoWindow.style = `height:${newHeight}vw; width:${newWidth}vw`;
     marzipanoWindow.src = `${myUrl}/index.html`;
     $("#walkthrough").append(marzipanoWindow);
 }
-$(window).resize( function (){
-    if ( window.innerHeight > window.innerWidth && myOrientation === 'horz'){
-        $("#walkthrough").empty();
-        makeWalkthrough();
-    } else if (window.innerHeight < window.innerWidth && myOrientation === 'vert') {
-        $("#walkthrough").empty();
-        makeWalkthrough();
-    }
-});
+
 // script for es5
 var scriptEs5 = document.createElement("script");
 scriptEs5.type = "text/javascript";
@@ -67,17 +60,4 @@ var scriptMarzipano = document.createElement("script");
 scriptMarzipano.type = "text/javascript";
 scriptMarzipano.src = `${myUrl}/vendor/marzipano.js`;
 $("head").append(scriptMarzipano);
-
 </script>
-
-
-
-<!-- <div id='walkthrough' style='margin:auto;text-align:center;'>
-    <iframe src='https://avatar-dimension-studio.netlify.app/index.html' width=1000px height =780px></iframe>
-</div>
-<script src='https://avatar-dimension-studio.netlify.app/vendor/es5-shim.js'></script>
-<script src='https://avatar-dimension-studio.netlify.app/vendor/eventShim.js'></script>
-<script src='https://avatar-dimension-studio.netlify.app/vendor/requestAnimationFrame.js' ></script>
-<script src='https://avatar-dimension-studio.netlify.app/vendor/marzipano.js'>
-</script> -->
-    
