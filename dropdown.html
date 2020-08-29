@@ -1,0 +1,11 @@
+<script>
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile){
+} else {
+  $(document).ready(function(){
+$('.markdown-block .sqs-block-content h4').css('cursor','pointer');
+$(".markdown-block .sqs-block-content h4").nextUntil("h4").slideToggle();
+$(".markdown-block .sqs-block-content h4").click(function() {$(this).nextUntil("h4").slideToggle();});
+});
+}
+</script>
