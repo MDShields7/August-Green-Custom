@@ -29,8 +29,10 @@
 
 ### Add clickable dropdown menus
 
+![Dropdown Accordion Gof](https://github.com/MDShields7/August-Green-Custom/blob/master/images/dropdown.gif)
+
 1.  Insert a markdown section on your squarespace page in the editor.</br>
-2.  Place the text you need, using #### before each section, and br tag after each individual line in that section. Follow the \[ Name \]\( link \) pattern for links too. Use my [dropdown markdown example](https://github.com/MDShields7/August-Green-Custom/blob/master/dropdown.md).</br>
+2.  Place the text you need, using #### before each section, and br tag after each individual line in that section. Follow the \[ Name \]\( link \) pattern for links too. Use my [dropdown markdown example](https://github.com/MDShields7/August-Green-Custom/blob/master/dropdown.md) (make sure to use raw version, click raw in top right).</br>
 3.  Apply changes, and save page.</br>
 4.  In editor pages manu, click the settings gear for that page. Go to advanced, and insert this [dropdown script](https://github.com/MDShields7/August-Green-Custom/blob/master/dropdown.html), and close.</br>
 5.  If it doesn't work, check to make sure you have 4  pound signs with a space before the text. The script targets h4 tags, which correlates to '#### Title' in the markdown file. 
