@@ -2,20 +2,12 @@
 <script>
 // Place url of your deployed app here
 // example myUrl = 'https://avatar-dimension-studio.netlify.app'
-const myUrl = '';
+const myUrl = 'https://avatar-dimension-studio-final.netlify.app/';
+
 $(document).ready( function (){
     makeWalkthrough();
 })
 var myOrientation;
-$(window).resize( function (){
-    if ( window.innerHeight > window.innerWidth && myOrientation === 'horz'){
-        $("#walkthrough").empty();
-        makeWalkthrough();
-    } else if (window.innerHeight < window.innerWidth && myOrientation === 'vert') {
-        $("#walkthrough").empty();
-        makeWalkthrough();
-    }
-});
 function makeWalkthrough () {
     const myWidth = window.innerWidth;
     const myHeight = window.innerHeight;
@@ -28,18 +20,28 @@ function makeWalkthrough () {
     }
     const newWidth = (100 - (horizPadd*2));
     if ( myHeight >  myWidth) {
-        newHeight = 4/3 * newWidth;
+        newHeight = 16/9 * newWidth;
         myOrientation = 'vert'
     } else {
-        newHeight = 3/4 * newWidth;
+        newHeight = 9/16 * newWidth;
         myOrientation = 'horz'
-    }
-    var marzipanoWindow = document.createElement("iframe");
-    marzipanoWindow.style = `height:${newHeight}vw; width:${newWidth}vw`;
-    marzipanoWindow.src = `${myUrl}/index.html`;
-    $("#walkthrough").append(marzipanoWindow);
 }
 
+// Insert window for walkthrough
+var marzipanoWindow = document.createElement("iframe");
+marzipanoWindow.style = `height:${newHeight}vw; width:${newWidth}vw`;
+marzipanoWindow.src = `${myUrl}/index.html`;
+$("#walkthrough").append(marzipanoWindow);
+}
+$(window).resize( function (){
+    if ( window.innerHeight > window.innerWidth && myOrientation === 'horz'){
+        $("#walkthrough").empty();
+        makeWalkthrough();
+    } else if (window.innerHeight < window.innerWidth && myOrientation === 'vert') {
+        $("#walkthrough").empty();
+        makeWalkthrough();
+    }
+});
 // script for Screenful
 var scriptScreenful = document.createElement("script");
 scriptScreenful.type = "text/javascript";
@@ -54,7 +56,7 @@ $("head").append(scriptClassList);
 var scriptBowser = document.createElement("script");
 scriptBowser.type = "text/javascript";
 scriptBowser.src = `${myUrl}/vendor/bowser.min.js`;
-$("head").append(scriptBowser);
+$("head").append(scriptBowser);  
 // script for es5
 var scriptEs5 = document.createElement("script");
 scriptEs5.type = "text/javascript";
@@ -75,4 +77,5 @@ var scriptMarzipano = document.createElement("script");
 scriptMarzipano.type = "text/javascript";
 scriptMarzipano.src = `${myUrl}/vendor/marzipano.js`;
 $("head").append(scriptMarzipano);
+document.getElementById('autorotateToggle').click()
 </script>
