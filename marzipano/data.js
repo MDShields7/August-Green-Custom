@@ -49,19 +49,28 @@ var APP_DATA = {
             "yaw": 2.8819914268131903,
             "pitch": 0.15014522388823615,
             "title": "Dimension - London",
-            "text": "https://www.dimensionstudio.co/"
+            "text": "",
+            "link": "https://www.dimensionstudio.co/",
+            "linkText": "<u>dimensionstudio.co</u>",
           },
           {
             "yaw": 2.8803137990623258,
             "pitch": -0.03293424805527856,
             "title": "Avatar - St. Louis",
-            "text": "http://avatar-studios.com/"
+            "text": "",
+            "link": "http://avatar-studios.com/",
+            "linkText": "<u>avatar-studios.com</u>",
           },
           {
             "yaw": 0.7591500911693405,
             "pitch": -0.020075817996383805,
-            "title": "Welcome to Avatar Dimension Studio",
-            "text": "The AD Studio is a volumetric capture film studio located outside of Washington D.C.&nbsp;<div><br></div><div>Design by August Green https://www.augustgreen.com/</div><div><br><div>Visualization by Kaleidoskope</div><div>https://www.kaleidoskope.io/<br></div></div><div><br></div>"
+            "title": "Welcome to Avatar Dimension",
+            "text": "The AD Studio is a volumetric capture film studio located outside of Washington D.C.&nbsp;<div><br></div><div>Design by August Green</div>",
+            "link": "https://www.augustgreen.com",
+            "linkText": "<u>augustgreen.com</u>",
+            "text2": "Visualization by Kaleidoskope",
+            "link2": "https://www.kaleidoskope.io",
+            "linkText2": "<u>kaleidoskope.io</u>",
           }
         ]
       },

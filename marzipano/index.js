@@ -324,10 +324,38 @@
     header.appendChild(titleWrapper);
     header.appendChild(closeWrapper);
 
-    // Create text element.
-    var text = document.createElement('div');
-    text.classList.add('info-hotspot-text');
-    text.innerHTML = hotspot.text;
+     // Create text element.
+     var text = document.createElement('div');
+     text.classList.add('info-hotspot-text');
+     var textInside = document.createElement('div');
+     textInside.innerHTML = hotspot.text
+     text.appendChild(textInside);
+     var link;
+     function clicker (myHref) {
+       parent.location.href = myHref
+     }
+     if (hotspot.link){
+       link = document.createElement('a');
+       link.style.cursor = "pointer";
+       link.addEventListener('click', function(){clicker(hotspot.link)});
+       link.innerHTML = hotspot.linkText;
+       console.log('link', link)
+       text.appendChild(link);
+     }
+     if (hotspot.text2){
+       var textInside2 = document.createElement('div');
+       textInside2.innerHTML = hotspot.text2
+       text.appendChild(textInside2);
+       var link2;
+       if (hotspot.link2){
+         link2 = document.createElement('a');
+         link2.style.cursor = "pointer";
+         link2.addEventListener('click', function(){clicker(hotspot.link2)});
+         link2.innerHTML = hotspot.linkText2;
+         text.appendChild(link2);
+       }
+     }
+     // text.innerHTML = hotspot.text;
 
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
