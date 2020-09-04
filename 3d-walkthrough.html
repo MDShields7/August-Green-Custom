@@ -40,6 +40,21 @@ function makeWalkthrough () {
     $("#walkthrough").append(marzipanoWindow);
 }
 
+// script for Screenful
+var scriptScreenful = document.createElement("script");
+scriptScreenful.type = "text/javascript";
+scriptScreenful.src = `${myUrl}/vendor/scrennfull.min.js`;
+$("head").append(scriptScreenful);
+// script for Classlist
+var scriptClassList = document.createElement("script");
+scriptClassList.type = "text/javascript";
+scriptClassList.src = `${myUrl}/vendor/classList.js`;
+$("head").append(scriptClassList);
+// script for bowser
+var scriptBowser = document.createElement("script");
+scriptBowser.type = "text/javascript";
+scriptBowser.src = `${myUrl}/vendor/bowser.min.js`;
+$("head").append(scriptBowser);
 // script for es5
 var scriptEs5 = document.createElement("script");
 scriptEs5.type = "text/javascript";
