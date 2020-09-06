@@ -23,7 +23,7 @@ function makeWalkthrough () {
         newHeight = 16/9 * newWidth;
         myOrientation = 'vert'
     } else {
-        newHeight = 9/16 * newWidth;
+        newHeight = 3/4 * newWidth;
         myOrientation = 'horz'
 }
 
@@ -45,7 +45,7 @@ $(window).resize( function (){
 // script for Screenful
 var scriptScreenful = document.createElement("script");
 scriptScreenful.type = "text/javascript";
-scriptScreenful.src = `${myUrl}/vendor/scrennfull.min.js`;
+scriptScreenful.src = `${myUrl}/vendor/screenfull.min.js`;
 $("head").append(scriptScreenful);
 // script for Classlist
 var scriptClassList = document.createElement("script");
@@ -77,5 +77,4 @@ var scriptMarzipano = document.createElement("script");
 scriptMarzipano.type = "text/javascript";
 scriptMarzipano.src = `${myUrl}/vendor/marzipano.js`;
 $("head").append(scriptMarzipano);
-document.getElementById('autorotateToggle').click()
 </script>
